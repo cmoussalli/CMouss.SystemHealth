@@ -10,4 +10,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CMouss.SystemHealth.Core\CMouss.SystemHealth.Core.csproj" />
+  </ItemGroup>
+
 </Project>

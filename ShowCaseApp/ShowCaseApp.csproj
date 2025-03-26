@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CMouss.SystemHealth.Web\CMouss.SystemHealth.Web.csproj" />
+  </ItemGroup>
+
 </Project>
