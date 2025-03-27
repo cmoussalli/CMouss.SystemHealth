@@ -12,6 +12,9 @@ public class Program
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
 
+        builder.Services.AddControllers();
+
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -27,8 +30,18 @@ public class Program
         app.UseStaticFiles();
         app.UseAntiforgery();
 
+        app.MapControllers();
+
         app.MapRazorComponents<App>()
             .AddInteractiveServerRenderMode();
+
+        //app.UseEndpoints(endpoints =>
+        //{
+        //    endpoints.MapControllerRoute(
+        //        name: "default",
+        //        pattern: "{controller=Home}/{action=Index}/{id?}");
+        //});
+
 
         app.Run();
     }
